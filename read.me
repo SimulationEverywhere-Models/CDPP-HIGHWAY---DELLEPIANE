@@ -1,0 +1,18 @@
+Los test se identifican por dos número. El primero identifica el modelo
+que se desea testear y el segundo el caso de test que se desea correr.
+Cada modelo testea modelos atómicos y acoplados diferentes (ver informe)
+Para correr los casos de test, se debe utilizar el script 'run'.
+La sintaxis es la siguiente:
+
+    run <modelo> <caso>
+    Donde:
+	modelo	es el número del modelo que se desea testear
+	caso	es el caso de test que se desea correr sobre el modelo
+
+Es importante que el binario 'simu' se encuentre compilado y en el PATH para
+que el script funcione correctamente.
+
+El script genera los siguientes archivos de salida:
+    Test_<modelo>.<caso>.log	Archivo con el log interno de la corrida.
+    Test_<modelo>.<caso>.out	Archivo con los eventos de salida de la corrida.
+

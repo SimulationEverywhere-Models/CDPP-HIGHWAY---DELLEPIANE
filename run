@@ -1,0 +1,8 @@
+#!/bin/sh
+# Toma como parámetro en $1 el test y en $2 el caso de test especifico
+LOG=test_$1.$2.log
+OUTPUT=test_$1.$2.out
+INPUT=events_$1.$2.ext
+MODEL=test_$1.ma
+
+simu -o$OUTPUT -e$INPUT -m$MODEL -l$LOG -s
